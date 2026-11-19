@@ -72,6 +72,160 @@
             "tags": ["video", "caption", "official"],
             "training_data": null,
             "date_added": "2026-06-25 10:31:00"
+        },
+        {
+            "base_name": "videodb-transcript",
+            "base_filename": null,
+            "version": null,
+            "description": "VideoDB spoken words analyzer, which transcribes the speech in a video into timed transcript segments with word-level timing and speaker labels",
+            "source": "https://videodb.io",
+            "author": "Spext Labs Inc.",
+            "license": "https://videodb.io/legal/terms",
+            "size_bytes": null,
+            "default_deployment_config_dict": {
+                "type": "fiftyone.utils.videodb.VideoDBModel",
+                "config": {
+                    "analyzer": "spoken_words"
+                }
+            },
+            "requirements": {
+                "packages": ["videodb>=0.5.1"]
+            },
+            "tags": ["video", "transcription", "temporal-detection"],
+            "training_data": null,
+            "date_added": "2026-11-17 12:00:00"
+        },
+        {
+            "base_name": "videodb-scene-descriptions",
+            "base_filename": null,
+            "version": null,
+            "description": "VideoDB vision-language analyzer, which splits a video into scenes and describes each scene in natural language, optionally following a custom prompt and output schema",
+            "source": "https://videodb.io",
+            "author": "Spext Labs Inc.",
+            "license": "https://videodb.io/legal/terms",
+            "size_bytes": null,
+            "default_deployment_config_dict": {
+                "type": "fiftyone.utils.videodb.VideoDBModel",
+                "config": {
+                    "analyzer": "vlm"
+                }
+            },
+            "requirements": {
+                "packages": ["videodb>=0.5.1"]
+            },
+            "tags": ["video", "vlm", "caption", "temporal-detection"],
+            "training_data": null,
+            "date_added": "2026-11-17 12:00:00"
+        },
+        {
+            "base_name": "videodb-ocr",
+            "base_filename": null,
+            "version": null,
+            "description": "VideoDB OCR analyzer, which extracts the text visible on screen, such as signs, slides, labels, captions, and UI text, for each scene of a video",
+            "source": "https://videodb.io",
+            "author": "Spext Labs Inc.",
+            "license": "https://videodb.io/legal/terms",
+            "size_bytes": null,
+            "default_deployment_config_dict": {
+                "type": "fiftyone.utils.videodb.VideoDBModel",
+                "config": {
+                    "analyzer": "ocr"
+                }
+            },
+            "requirements": {
+                "packages": ["videodb>=0.5.1"]
+            },
+            "tags": ["video", "ocr", "temporal-detection"],
+            "training_data": null,
+            "date_added": "2026-11-18 12:00:00"
+        },
+        {
+            "base_name": "videodb-brand-detection",
+            "base_filename": null,
+            "version": null,
+            "description": "VideoDB brand detection analyzer, which finds the logos, brand names, product labels, and sponsorships visible in each scene of a video",
+            "source": "https://videodb.io",
+            "author": "Spext Labs Inc.",
+            "license": "https://videodb.io/legal/terms",
+            "size_bytes": null,
+            "default_deployment_config_dict": {
+                "type": "fiftyone.utils.videodb.VideoDBModel",
+                "config": {
+                    "analyzer": "brand_detection"
+                }
+            },
+            "requirements": {
+                "packages": ["videodb>=0.5.1"]
+            },
+            "tags": ["video", "vlm", "temporal-detection"],
+            "training_data": null,
+            "date_added": "2026-11-18 12:00:00"
+        },
+        {
+            "base_name": "videodb-activity-recognition",
+            "base_filename": null,
+            "version": null,
+            "description": "VideoDB activity recognition analyzer, which names the main action or activity in each scene of a video",
+            "source": "https://videodb.io",
+            "author": "Spext Labs Inc.",
+            "license": "https://videodb.io/legal/terms",
+            "size_bytes": null,
+            "default_deployment_config_dict": {
+                "type": "fiftyone.utils.videodb.VideoDBModel",
+                "config": {
+                    "analyzer": "activity_recognition"
+                }
+            },
+            "requirements": {
+                "packages": ["videodb>=0.5.1"]
+            },
+            "tags": ["video", "vlm", "action-recognition", "temporal-detection"],
+            "training_data": null,
+            "date_added": "2026-11-18 12:00:00"
+        },
+        {
+            "base_name": "videodb-location-detection",
+            "base_filename": null,
+            "version": null,
+            "description": "VideoDB location detection analyzer, which describes the setting and place of each scene of a video",
+            "source": "https://videodb.io",
+            "author": "Spext Labs Inc.",
+            "license": "https://videodb.io/legal/terms",
+            "size_bytes": null,
+            "default_deployment_config_dict": {
+                "type": "fiftyone.utils.videodb.VideoDBModel",
+                "config": {
+                    "analyzer": "location_detection"
+                }
+            },
+            "requirements": {
+                "packages": ["videodb>=0.5.1"]
+            },
+            "tags": ["video", "vlm", "temporal-detection"],
+            "training_data": null,
+            "date_added": "2026-11-18 12:00:00"
+        },
+        {
+            "base_name": "videodb-object-detection",
+            "base_filename": null,
+            "version": null,
+            "description": "VideoDB object detection analyzer, which detects COCO objects with bounding boxes in sampled frames of a video. Its default model runs on a VideoDB sandbox",
+            "source": "https://videodb.io",
+            "author": "Spext Labs Inc.",
+            "license": "https://videodb.io/legal/terms",
+            "size_bytes": null,
+            "default_deployment_config_dict": {
+                "type": "fiftyone.utils.videodb.VideoDBModel",
+                "config": {
+                    "analyzer": "object_detection"
+                }
+            },
+            "requirements": {
+                "packages": ["videodb>=0.5.1"]
+            },
+            "tags": ["video", "detection", "coco"],
+            "training_data": null,
+            "date_added": "2026-11-18 12:00:00"
         }
     ]
 }
