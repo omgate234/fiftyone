@@ -180,7 +180,7 @@ on the cards below to see how!
 
 .. customcarditem::
     :header: VideoDB
-    :description: Use our VideoDB integration to add timestamped transcripts and scene descriptions to your video datasets.
+    :description: Use our VideoDB integration to add timestamped transcripts, scene descriptions, on-screen text, brands, activities, locations, and object detections to your video datasets.
     :link: videodb.html
     :image: ../_images/activitynet_evaluate_detections.png
     :tags: Models
